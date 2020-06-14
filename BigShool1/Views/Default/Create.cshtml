@@ -1,4 +1,4 @@
-﻿@model BigShool1.ViewModels.CourseViewModel
+﻿@model BigShool1.ViewModel.CourseViewModel
 @{
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,8 +6,8 @@
 
 <h2>Create</h2>
 
-<form>
-    @using (Html.BeginForm("Create", "Course"))
+
+    @using (Html.BeginForm("Create", "Default"))
     {
         <div class="form-group">
             @Html.LabelFor(m => m.Place)
@@ -33,4 +33,3 @@
         <div class="form-group"></div>
         <div class="form-group"></div>
     }
-</form>

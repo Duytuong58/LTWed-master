@@ -23,7 +23,7 @@ namespace BigShool1.Controllers
         {
             var viewModel = new CourseViewModel
             {
-                Categories = _dbContext.Categories.ToList()
+                Categories = _dbContext.Categorises.ToList()
             };
             return View(viewModel);
         }
@@ -33,7 +33,7 @@ namespace BigShool1.Controllers
         {
             if (!ModelState.IsValid)
             {
-                viewModel.Categories = _dbContext.Categories.ToList();
+                viewModel.Categories = _dbContext.Categorises.ToList();
                 return View("Create", viewModel);
             }
             var course = new Course

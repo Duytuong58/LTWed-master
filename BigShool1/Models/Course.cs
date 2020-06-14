@@ -17,7 +17,7 @@ namespace BigSchool1.Models
         public DateTime DateTime { get; set; }
         public Category Category { get; set; }
         [Required]
-        public byte CategoryId { get; set; }
+        public byte CategoryId { get; internal set; }
         public string LecturerId { get; internal set; }
 
     }
